@@ -1,6 +1,8 @@
 import { prisma } from '@/lib/prisma'
 import { Package, Users, DollarSign, TrendingUp } from 'lucide-react'
 
+export const dynamic = 'force-dynamic'
+
 async function getStats() {
     try {
         const productCount = await prisma.product.count()

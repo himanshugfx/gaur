@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { ArrowLeft, Check, ShoppingBag } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
+export const dynamic = 'force-dynamic'
+
 async function getProduct(id: string) {
     try {
         const product = await prisma.product.findUnique({

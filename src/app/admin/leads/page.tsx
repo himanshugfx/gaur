@@ -1,5 +1,8 @@
 import { prisma } from '@/lib/prisma'
 import { Mail, Phone, Calendar } from 'lucide-react'
+import { Lead } from '@prisma/client'
+
+export const dynamic = 'force-dynamic'
 
 async function getLeads() {
     try {
@@ -40,7 +43,7 @@ export default async function LeadsPage() {
                                     </td>
                                 </tr>
                             ) : (
-                                leads.map((lead) => (
+                                leads.map((lead: Lead) => (
                                     <tr key={lead.id} className="hover:bg-gray-50 transition-colors">
                                         <td className="px-6 py-4 font-medium text-gray-900">
                                             <div>{lead.name}</div>

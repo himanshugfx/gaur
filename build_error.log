@@ -1,0 +1,113 @@
+
+> gaur@0.1.0 build
+> next build
+
+▲ Next.js 16.1.1 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1349.6ms
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+Error: Failed to collect configuration for /admin
+    at ignore-listed frames {
+  [cause]: Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+  
+  ```
+  new PrismaClient({
+    ...
+  })
+  ```
+  
+  or
+  
+  ```
+  constructor() {
+    super({ ... });
+  }
+  ```
+            
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__1545c1bf._.js:1:188)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__1545c1bf._.js:1:433)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\_21082660._.js:1:33) {
+    clientVersion: '7.2.0',
+    errorCode: undefined,
+    retryable: undefined
+  }
+}
+Error: Failed to collect configuration for /admin/products
+    at ignore-listed frames {
+  [cause]: Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+  
+  ```
+  new PrismaClient({
+    ...
+  })
+  ```
+  
+  or
+  
+  ```
+  constructor() {
+    super({ ... });
+  }
+  ```
+            
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__542643cc._.js:1:188)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__542643cc._.js:1:446)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\_4084b3af._.js:1:33) {
+    clientVersion: '7.2.0',
+    errorCode: undefined,
+    retryable: undefined
+  }
+}
+Error: Failed to collect configuration for /products/[id]
+    at ignore-listed frames {
+  [cause]: Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+  
+  ```
+  new PrismaClient({
+    ...
+  })
+  ```
+  
+  or
+  
+  ```
+  constructor() {
+    super({ ... });
+  }
+  ```
+            
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__03d2fbe8._.js:1:323)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[root-of-the-server]__03d2fbe8._.js:1:10073)
+      at instantiateModule (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:740:9)
+      at getOrInstantiateModuleFromParent (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:763:12)
+      at Context.esmImport [as i] (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+      at module evaluation (D:\Himanshu Kumar\Anti gravity\Bulandsehar\gaur\.next\server\chunks\ssr\_bc9db180._.js:1:33) {
+    clientVersion: '7.2.0',
+    errorCode: undefined,
+    retryable: undefined
+  }
+}
+
+> Build error occurred
+Error: Failed to collect page data for /admin
+    at ignore-listed frames {
+  type: 'Error'
+}
