@@ -1,0 +1,18 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/whatsapp/layout,_N_T_/admin/whatsapp/campaigns/layout,_N_T_/admin/whatsapp/campaigns/new/layout,_N_T_/admin/whatsapp/campaigns/new/page,_N_T_/admin/whatsapp/campaigns/new"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/admin/whatsapp/campaigns/new/__PAGE__",
+    "/admin/whatsapp/campaigns/new",
+    "/admin/whatsapp/campaigns",
+    "/admin/whatsapp",
+    "/admin",
+    "/_index",
+    "/_head"
+  ]
+}

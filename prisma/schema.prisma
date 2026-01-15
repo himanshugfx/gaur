@@ -1,0 +1,161 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Admin {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  @@map("admins")
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  price       Decimal  @db.Decimal(10, 2)
+  category    String
+  images      String[]
+  stock       Int      @default(0)
+  featured    Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("products")
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  name      String
+  mimeType  String
+  data      String   @db.Text
+  size      Int
+  createdAt DateTime @default(now())
+}
+
+// WhatsApp Marketing Models
+model WhatsAppTemplate {
+  id        String   @id @default(cuid())
+  name      String
+  content   String
+  variables String   // JSON array
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model WhatsAppCampaign {
+  id             String            @id @default(cuid())
+  name           String
+  templateId     String
+  status         String
+  audience       String
+  sentCount      Int               @default(0)
+  deliveredCount Int               @default(0)
+  scheduledAt    DateTime?
+  messages       WhatsAppMessage[]
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+}
+
+model WhatsAppMessage {
+  id         String            @id @default(cuid())
+  campaignId String?
+  campaign   WhatsAppCampaign? @relation(fields: [campaignId], references: [id])
+  phone      String
+  content    String
+  status     String
+  sentAt     DateTime          @default(now())
+}
+
+// Sales Funnel Models
+model FunnelStage {
+  id        String   @id @default(cuid())
+  name      String
+  order     Int
+  color     String
+  leads     Lead[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Lead {
+  id          String         @id @default(cuid())
+  name        String
+  email       String
+  phone       String?
+  company     String?
+  source      String
+  stageId     String
+  stage       FunnelStage    @relation(fields: [stageId], references: [id])
+  value       Float?
+  notes       String?
+  activities  LeadActivity[]
+  followUps   LeadFollowUp[]
+  convertedAt DateTime?
+  orderId     String?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+}
+
+model LeadFollowUp {
+  id          String    @id @default(cuid())
+  leadId      String
+  lead        Lead      @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  scheduledAt DateTime
+  notes       String?
+  status      String    @default("PENDING")
+  completedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([leadId])
+  @@index([scheduledAt])
+  @@index([status])
+}
+
+model LeadActivity {
+  id        String   @id @default(cuid())
+  leadId    String
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  type      String
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model ContactInquiry {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  message   String
+  status    String   @default("UNREAD")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model HotelAmenity {
+  id            String   @id @default(cuid())
+  name          String
+  category      String
+  description   String?  @db.Text
+  image         String
+  price         Float
+  minOrderQty   Int      @default(100)
+  sizes         String?
+  packing       String?
+  contents      String?
+  material      String?
+  dimensions    String?
+  color         String?
+  isActive      Boolean  @default(true)
+  priority      Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

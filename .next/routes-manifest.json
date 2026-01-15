@@ -22,6 +22,70 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/admin/funnel/leads/[id]",
+      "regex": "^/admin/funnel/leads/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/funnel/leads/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/hotel-catalogue/[id]/edit",
+      "regex": "^/admin/hotel\\-catalogue/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/hotel\\-catalogue/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/campaigns/[id]",
+      "regex": "^/admin/whatsapp/campaigns/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/whatsapp/campaigns/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/hotel-catalogue/[id]",
+      "regex": "^/api/admin/hotel\\-catalogue/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/hotel\\-catalogue/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/funnel/leads/[id]/stage",
+      "regex": "^/api/funnel/leads/([^/]+?)/stage(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/funnel/leads/(?<nxtPid>[^/]+?)/stage(?:/)?$"
+    },
+    {
+      "page": "/api/media/[id]",
+      "regex": "^/api/media/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/media/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/templates/[id]",
+      "regex": "^/api/whatsapp/templates/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/whatsapp/templates/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/templates/[id]/submit",
+      "regex": "^/api/whatsapp/templates/([^/]+?)/submit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/whatsapp/templates/(?<nxtPid>[^/]+?)/submit(?:/)?$"
+    },
+    {
       "page": "/products/[id]",
       "regex": "^/products/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -56,22 +120,148 @@
       "namedRegex": "^/admin(?:/)?$"
     },
     {
-      "page": "/admin/leads",
-      "regex": "^/admin/leads(?:/)?$",
+      "page": "/admin/funnel",
+      "regex": "^/admin/funnel(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/admin/leads(?:/)?$"
+      "namedRegex": "^/admin/funnel(?:/)?$"
     },
     {
-      "page": "/admin/products",
-      "regex": "^/admin/products(?:/)?$",
+      "page": "/admin/funnel/leads",
+      "regex": "^/admin/funnel/leads(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/admin/products(?:/)?$"
+      "namedRegex": "^/admin/funnel/leads(?:/)?$"
     },
     {
-      "page": "/admin/products/new",
-      "regex": "^/admin/products/new(?:/)?$",
+      "page": "/admin/funnel/leads/add",
+      "regex": "^/admin/funnel/leads/add(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/admin/products/new(?:/)?$"
+      "namedRegex": "^/admin/funnel/leads/add(?:/)?$"
+    },
+    {
+      "page": "/admin/hotel-catalogue",
+      "regex": "^/admin/hotel\\-catalogue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/hotel\\-catalogue(?:/)?$"
+    },
+    {
+      "page": "/admin/hotel-catalogue/add",
+      "regex": "^/admin/hotel\\-catalogue/add(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/hotel\\-catalogue/add(?:/)?$"
+    },
+    {
+      "page": "/admin/inquiries",
+      "regex": "^/admin/inquiries(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/inquiries(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp",
+      "regex": "^/admin/whatsapp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/campaigns",
+      "regex": "^/admin/whatsapp/campaigns(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp/campaigns(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/campaigns/new",
+      "regex": "^/admin/whatsapp/campaigns/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp/campaigns/new(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/quick-send",
+      "regex": "^/admin/whatsapp/quick\\-send(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp/quick\\-send(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/templates",
+      "regex": "^/admin/whatsapp/templates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp/templates(?:/)?$"
+    },
+    {
+      "page": "/admin/whatsapp/templates/new",
+      "regex": "^/admin/whatsapp/templates/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/whatsapp/templates/new(?:/)?$"
+    },
+    {
+      "page": "/api/admin/hotel-catalogue",
+      "regex": "^/api/admin/hotel\\-catalogue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/hotel\\-catalogue(?:/)?$"
+    },
+    {
+      "page": "/api/admin/hotel-catalogue/seed",
+      "regex": "^/api/admin/hotel\\-catalogue/seed(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/hotel\\-catalogue/seed(?:/)?$"
+    },
+    {
+      "page": "/api/admin/login",
+      "regex": "^/api/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/login(?:/)?$"
+    },
+    {
+      "page": "/api/admin/logout",
+      "regex": "^/api/admin/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/logout(?:/)?$"
+    },
+    {
+      "page": "/api/contact",
+      "regex": "^/api/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contact(?:/)?$"
+    },
+    {
+      "page": "/api/funnel",
+      "regex": "^/api/funnel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/funnel(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/campaigns",
+      "regex": "^/api/whatsapp/campaigns(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/whatsapp/campaigns(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/leads",
+      "regex": "^/api/whatsapp/leads(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/whatsapp/leads(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/send",
+      "regex": "^/api/whatsapp/send(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/whatsapp/send(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/setup",
+      "regex": "^/api/whatsapp/setup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/whatsapp/setup(?:/)?$"
+    },
+    {
+      "page": "/api/whatsapp/templates",
+      "regex": "^/api/whatsapp/templates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/whatsapp/templates(?:/)?$"
     },
     {
       "page": "/contact",

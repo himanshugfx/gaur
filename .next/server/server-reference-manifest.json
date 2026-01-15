@@ -1,19 +1,19 @@
 {
   "node": {
-    "40a1f908e7814ae3bd1fc876289e659b000f1f5378": {
+    "4063850bd762ec319b7cdc00fdfe297e6bf33ff6a1": {
       "workers": {
-        "app/admin/products/new/page": {
-          "moduleId": 65033,
+        "app/admin/funnel/leads/add/page": {
+          "moduleId": 88946,
           "async": true,
-          "exportedName": "createProduct",
-          "filename": "src/app/actions/product-actions.ts"
+          "exportedName": "$$RSC_SERVER_ACTION_0",
+          "filename": "src/app/admin/funnel/leads/add/page.tsx"
         }
       },
       "layer": {
-        "app/admin/products/new/page": "action-browser"
+        "app/admin/funnel/leads/add/page": "rsc"
       },
-      "filename": "src/app/actions/product-actions.ts",
-      "exportedName": "createProduct"
+      "filename": "src/app/admin/funnel/leads/add/page.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
     },
     "60d96582f3be09f2d4ad95fb62d6c6ac57fcbcded6": {
       "workers": {

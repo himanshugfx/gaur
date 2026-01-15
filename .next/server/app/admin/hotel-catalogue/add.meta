@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/hotel-catalogue/layout,_N_T_/admin/hotel-catalogue/add/layout,_N_T_/admin/hotel-catalogue/add/page,_N_T_/admin/hotel-catalogue/add"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/admin/hotel-catalogue/add/__PAGE__",
+    "/admin/hotel-catalogue/add",
+    "/admin/hotel-catalogue",
+    "/admin",
+    "/_index",
+    "/_head"
+  ]
+}

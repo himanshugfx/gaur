@@ -16,21 +16,29 @@ export async function submitLead(prevState: any, formData: FormData) {
     }
 
     try {
-        await prisma.lead.create({
+        // Format message with metadata for admin inquiry page parsing
+        const formattedMessage = companyName
+            ? `[metadata]:${JSON.stringify({
+                hotelName: companyName,
+                quantity: 'N/A',
+                originalMessage: message
+            })}`
+            : message;
+
+        await prisma.contactInquiry.create({
             data: {
                 name,
                 email,
                 phone,
-                companyName,
-                message,
-                status: 'NEW',
+                message: formattedMessage,
+                status: 'UNREAD',
             },
         })
 
-        revalidatePath('/admin/leads')
+        revalidatePath('/admin/inquiries')
         return { success: true, message: 'Thank you! We will contact you shortly.' }
     } catch (error) {
-        console.error('Lead submission error:', error)
+        console.error('Inquiry submission error:', error)
         return { success: false, message: 'Something went wrong. Please try again.' }
     }
 }
