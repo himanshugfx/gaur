@@ -1,0 +1,36 @@
+{
+  "node": {
+    "40a1f908e7814ae3bd1fc876289e659b000f1f5378": {
+      "workers": {
+        "app/admin/products/new/page": {
+          "moduleId": 65033,
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "src/app/actions/product-actions.ts"
+        }
+      },
+      "layer": {
+        "app/admin/products/new/page": "action-browser"
+      },
+      "filename": "src/app/actions/product-actions.ts",
+      "exportedName": "createProduct"
+    },
+    "60d96582f3be09f2d4ad95fb62d6c6ac57fcbcded6": {
+      "workers": {
+        "app/contact/page": {
+          "moduleId": 43901,
+          "async": true,
+          "exportedName": "submitLead",
+          "filename": "src/app/actions/contact-actions.ts"
+        }
+      },
+      "layer": {
+        "app/contact/page": "action-browser"
+      },
+      "filename": "src/app/actions/contact-actions.ts",
+      "exportedName": "submitLead"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "mIpQhPu6lyA4BRS4F8vVxuvbTsQeqg+yUtyIb+n7YOE="
+}
