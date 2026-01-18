@@ -51,6 +51,11 @@ export default function MediaUploader({
                 body: formData,
             });
 
+            const contentType = res.headers.get('content-type');
+            if (!contentType || !contentType.includes('application/json')) {
+                throw new Error(`Server error: ${res.status} ${res.statusText}`);
+            }
+
             const data = await res.json();
 
             if (!res.ok) {
