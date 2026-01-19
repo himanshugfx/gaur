@@ -13,6 +13,8 @@ const CATEGORIES = [
     { value: 'DISPENSORS', label: 'Dispensors', color: 'bg-pink-100 text-pink-700' },
     { value: 'CARTS_TROLLIES', label: 'Carts and Trollies', color: 'bg-orange-100 text-orange-700' },
     { value: 'MACHINERIES', label: 'Machineries', color: 'bg-indigo-100 text-indigo-700' },
+    { value: 'DRY_AMENITY', label: 'Dry Amenity', color: 'bg-stone-100 text-stone-700' },
+    { value: 'WET_AMENITY', label: 'Wet Amenity', color: 'bg-cyan-100 text-cyan-700' },
 ];
 
 interface HotelAmenity {

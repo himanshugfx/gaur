@@ -16,6 +16,8 @@ const CATEGORIES = [
     { value: 'DISPENSORS', label: 'Dispensors', fields: ['material', 'dimensions', 'color'] },
     { value: 'CARTS_TROLLIES', label: 'Carts and Trollies', fields: ['material', 'dimensions', 'color'] },
     { value: 'MACHINERIES', label: 'Machineries', fields: ['material', 'dimensions'] },
+    { value: 'DRY_AMENITY', label: 'Dry Amenity', fields: ['material', 'packing', 'dimensions', 'sizes', 'contents'] },
+    { value: 'WET_AMENITY', label: 'Wet Amenity', fields: ['material', 'packing', 'dimensions', 'sizes', 'contents'] },
 ];
 
 export default function AddHotelAmenityPage() {

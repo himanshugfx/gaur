@@ -8,17 +8,16 @@ import Link from 'next/link';
 import MediaUploader from '@/components/admin/MediaUploader';
 
 const CATEGORIES = [
-    { value: 'COSMETIC', label: 'Cosmetics', fields: ['sizes', 'packing'] },
-    { value: 'DENTAL_KIT', label: 'Dental Kit', fields: ['contents', 'packing'] },
-    { value: 'SHAVING_KIT', label: 'Shaving Kit', fields: ['contents', 'packing'] },
-    { value: 'VANITY_KIT', label: 'Vanity Kit', fields: ['contents', 'packing'] },
-    { value: 'SLIPPER', label: 'Slipper', fields: ['material', 'color', 'dimensions'] },
-    { value: 'COASTER', label: 'Coaster', fields: ['material', 'color', 'dimensions'] },
-    { value: 'LAUNDRY_BAG', label: 'Laundry Bag', fields: ['material', 'color', 'dimensions'] },
-    { value: 'GARBAGE_BAG', label: 'Garbage Bag', fields: ['material', 'color', 'dimensions'] },
-    { value: 'SHOWER_CAP', label: 'Shower Cap', fields: ['material', 'color'] },
-    { value: 'COMB', label: 'Comb', fields: ['material', 'color', 'dimensions'] },
-    { value: 'OTHER', label: 'Other', fields: ['material', 'dimensions'] },
+    { value: 'CONSUMABLES', label: 'Consumables', fields: ['material', 'packing'] },
+    { value: 'MOPS_WIPERS', label: 'Mops & Wipers', fields: ['material', 'dimensions', 'color'] },
+    { value: 'BROOMS_DUSTPANS', label: 'Brooms, Dustpans & Dustbins', fields: ['material', 'dimensions', 'color'] },
+    { value: 'HANDLING_EQUIPMENTS', label: 'Handling Equipments', fields: ['material', 'dimensions'] },
+    { value: 'UTILITIES', label: 'Utilities', fields: ['material', 'dimensions'] },
+    { value: 'DISPENSORS', label: 'Dispensors', fields: ['material', 'dimensions', 'color'] },
+    { value: 'CARTS_TROLLIES', label: 'Carts and Trollies', fields: ['material', 'dimensions', 'color'] },
+    { value: 'MACHINERIES', label: 'Machineries', fields: ['material', 'dimensions'] },
+    { value: 'DRY_AMENITY', label: 'Dry Amenity', fields: ['material', 'packing', 'dimensions', 'sizes', 'contents'] },
+    { value: 'WET_AMENITY', label: 'Wet Amenity', fields: ['material', 'packing', 'dimensions', 'sizes', 'contents'] },
 ];
 
 export default function EditHotelAmenityPage({ params }: { params: Promise<{ id: string }> }) {
@@ -28,7 +27,7 @@ export default function EditHotelAmenityPage({ params }: { params: Promise<{ id:
     const [saving, setSaving] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
-        category: 'COSMETIC',
+        category: 'CONSUMABLES',
         description: '',
         image: '',
         price: '',
@@ -62,7 +61,7 @@ export default function EditHotelAmenityPage({ params }: { params: Promise<{ id:
 
             setFormData({
                 name: data.name || '',
-                category: data.category || 'COSMETIC',
+                category: data.category || 'CONSUMABLES',
                 description: data.description || '',
                 image: data.image || '',
                 price: data.price?.toString() || '',

@@ -33,6 +33,8 @@ const CATEGORIES = [
     { value: 'DISPENSORS', label: 'Dispensors' },
     { value: 'CARTS_TROLLIES', label: 'Carts and Trollies' },
     { value: 'MACHINERIES', label: 'Machineries' },
+    { value: 'DRY_AMENITY', label: 'Dry Amenity' },
+    { value: 'WET_AMENITY', label: 'Wet Amenity' },
 ];
 
 const getCategoryLabel = (category: string) => {
@@ -49,6 +51,8 @@ const getCategoryColor = (category: string) => {
         DISPENSORS: 'bg-pink-100 text-pink-700',
         CARTS_TROLLIES: 'bg-orange-100 text-orange-700',
         MACHINERIES: 'bg-indigo-100 text-indigo-700',
+        DRY_AMENITY: 'bg-stone-100 text-stone-700',
+        WET_AMENITY: 'bg-cyan-100 text-cyan-700',
     };
     return colors[category] || 'bg-gray-100 text-gray-700';
 };

@@ -343,3 +343,13 @@ It can also happen if the client has a browser extension installed which messes 
                   ...
 
 [00:31:57.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:26.525] Server  LOG     ✓ Compiled in 43ms
+[00:51:32.069] Server  LOG     ✓ Compiled in 45ms
+[00:51:42.450] Server  LOG     ✓ Compiled in 44ms
+[00:51:53.638] Browser ERROR   ReactDOM.useFormState has been renamed to React.useActionState. Please update %s to use React.useActionState. ContactPage
+[00:51:59.702] Server  LOG     ✓ Compiled in 42ms
+[00:52:01.352] Server  LOG     ✓ Compiled in 40ms
+[00:52:32.902] Server  LOG     ✓ Compiled in 43ms
+[00:52:34.536] Server  LOG     ✓ Compiled in 41ms
+[01:07:48.797] Server  LOG     ✓ Compiled in 71ms
+[01:07:59.501] Server  LOG     ✓ Compiled in 56ms

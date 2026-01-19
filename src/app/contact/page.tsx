@@ -18,6 +18,8 @@ const PRODUCT_CATEGORIES = [
     { value: 'DISPENSORS', label: 'Dispensors' },
     { value: 'CARTS_TROLLIES', label: 'Carts and Trollies' },
     { value: 'MACHINERIES', label: 'Machineries' },
+    { value: 'DRY_AMENITY', label: 'Dry Amenity' },
+    { value: 'WET_AMENITY', label: 'Wet Amenity' },
 ];
 
 function SubmitButton() {
@@ -67,7 +69,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium text-gray-900">Phone</h4>
-                                        <p className="text-gray-500">+91 9110134408</p>
+                                        <p className="text-gray-500">+91 9319404000</p>
                                     </div>
                                 </div>
 
@@ -77,7 +79,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h4 className="font-medium text-gray-900">Email</h4>
-                                        <p className="text-gray-500">hello@harbigreen.com</p>
+                                        <p className="text-gray-500">support@hotelroomamenities.com</p>
                                     </div>
                                 </div>
 
