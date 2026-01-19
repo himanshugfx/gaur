@@ -25,17 +25,14 @@ interface HotelAmenity {
 
 const CATEGORIES = [
     { value: 'ALL', label: 'All Categories' },
-    { value: 'COSMETIC', label: 'Cosmetics' },
-    { value: 'DENTAL_KIT', label: 'Dental Kits' },
-    { value: 'SHAVING_KIT', label: 'Shaving Kits' },
-    { value: 'VANITY_KIT', label: 'Vanity Kits' },
-    { value: 'SLIPPER', label: 'Slippers' },
-    { value: 'COASTER', label: 'Coasters' },
-    { value: 'LAUNDRY_BAG', label: 'Laundry Bags' },
-    { value: 'GARBAGE_BAG', label: 'Garbage Bags' },
-    { value: 'SHOWER_CAP', label: 'Shower Caps' },
-    { value: 'COMB', label: 'Combs' },
-    { value: 'OTHER', label: 'Other' },
+    { value: 'CONSUMABLES', label: 'Consumables' },
+    { value: 'MOPS_WIPERS', label: 'Mops & Wipers' },
+    { value: 'BROOMS_DUSTPANS', label: 'Brooms, Dustpans & Dustbins' },
+    { value: 'HANDLING_EQUIPMENTS', label: 'Handling Equipments' },
+    { value: 'UTILITIES', label: 'Utilities' },
+    { value: 'DISPENSORS', label: 'Dispensors' },
+    { value: 'CARTS_TROLLIES', label: 'Carts and Trollies' },
+    { value: 'MACHINERIES', label: 'Machineries' },
 ];
 
 const getCategoryLabel = (category: string) => {
@@ -44,16 +41,14 @@ const getCategoryLabel = (category: string) => {
 
 const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
-        COSMETIC: 'bg-purple-100 text-purple-700',
-        DENTAL_KIT: 'bg-blue-100 text-blue-700',
-        SHAVING_KIT: 'bg-green-100 text-green-700',
-        VANITY_KIT: 'bg-pink-100 text-pink-700',
-        SLIPPER: 'bg-orange-100 text-orange-700',
-        COASTER: 'bg-yellow-100 text-yellow-700',
-        LAUNDRY_BAG: 'bg-teal-100 text-teal-700',
-        GARBAGE_BAG: 'bg-gray-100 text-gray-700',
-        SHOWER_CAP: 'bg-cyan-100 text-cyan-700',
-        COMB: 'bg-indigo-100 text-indigo-700',
+        CONSUMABLES: 'bg-green-100 text-green-700',
+        MOPS_WIPERS: 'bg-blue-100 text-blue-700',
+        BROOMS_DUSTPANS: 'bg-amber-100 text-amber-700',
+        HANDLING_EQUIPMENTS: 'bg-purple-100 text-purple-700',
+        UTILITIES: 'bg-teal-100 text-teal-700',
+        DISPENSORS: 'bg-pink-100 text-pink-700',
+        CARTS_TROLLIES: 'bg-orange-100 text-orange-700',
+        MACHINERIES: 'bg-indigo-100 text-indigo-700',
     };
     return colors[category] || 'bg-gray-100 text-gray-700';
 };

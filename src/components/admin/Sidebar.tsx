@@ -80,12 +80,12 @@ const NavItemComponent = ({
                     onClick={() => toggleMenu(item.name)}
                     title={isCollapsed ? item.name : undefined}
                     className={`w-full flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive || isChildActive
-                        ? 'bg-purple-600/20 text-purple-400'
+                        ? 'bg-green-800/20 text-emerald-400'
                         : 'text-gray-400 hover:text-white'
                         }`}
                 >
                     <div className={`flex items-center ${!isCollapsed && 'gap-3'}`}>
-                        <Icon className={`w-5 h-5 ${isActive || isChildActive ? 'text-purple-400' : 'text-gray-400 group-hover:text-white'}`} />
+                        <Icon className={`w-5 h-5 ${isActive || isChildActive ? 'text-emerald-400' : 'text-gray-400 group-hover:text-white'}`} />
                         {!isCollapsed && <span className="font-medium">{item.name}</span>}
                     </div>
                     {!isCollapsed && (
@@ -118,7 +118,7 @@ const NavItemComponent = ({
                                             if (window.innerWidth < 1024) onClose();
                                         }}
                                         className={`flex items-center gap-3 px-4 py-2.5 transition-all duration-200 ${isChildItemActive
-                                            ? 'bg-purple-600 text-white'
+                                            ? 'bg-green-800 text-white'
                                             : 'text-gray-400 hover:text-white hover:bg-gray-800'
                                             }`}
                                     >
@@ -143,7 +143,7 @@ const NavItemComponent = ({
                                     href={child.href}
                                     onClick={() => window.innerWidth < 1024 && onClose()}
                                     className={`flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-200 ${isChildItemActive
-                                        ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20'
+                                        ? 'bg-green-800 text-white shadow-lg shadow-green-500/20'
                                         : 'text-gray-400 hover:text-white hover:bg-gray-800'
                                         }`}
                                 >
@@ -164,7 +164,7 @@ const NavItemComponent = ({
             onClick={() => window.innerWidth < 1024 && onClose()}
             title={isCollapsed ? item.name : undefined}
             className={`flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive
-                ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20'
+                ? 'bg-green-800 text-white shadow-lg shadow-green-500/20'
                 : 'text-gray-400 hover:text-white'
                 }`}
         >
@@ -196,10 +196,9 @@ const SidebarContent = ({
         {/* Header */}
         <div className={`h-20 flex items-center ${isCollapsed ? 'justify-center' : 'px-6'} border-b border-gray-800`}>
             <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 flex-shrink-0 group">
-                    <Shield className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
+                <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 group">
+                    <img src="/logo.png" alt="Harbigreen" className="w-full h-full object-contain" />
                 </div>
-                {!isCollapsed && <span className="text-lg font-bold tracking-wide">Gaur Admin</span>}
             </div>
             {/* Mobile Toggle (Hamburger) - Replaces the X */}
             <button

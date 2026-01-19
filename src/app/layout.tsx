@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-    title: 'LuxeAmenities | Premium Hotel Supplies',
+    title: 'Harbigreen | Premium Hotel Supplies',
     description: 'Elevate your guest experience with our premium hotel amenities and toiletries.',
 }
 
@@ -23,21 +23,21 @@ export default function RootLayout({
                 {/* Navigation */}
                 <header className="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
                     <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-                        <Link href="/" className="text-2xl font-bold font-serif tracking-tight text-gray-900">
-                            Luxe<span className="text-purple-700">Amenities</span>
+                        <Link href="/" className="flex items-center gap-3">
+                            <img src="/logo.png" alt="Harbigreen" className="h-12 w-auto" />
                         </Link>
 
                         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-                            <Link href="/" className="hover:text-purple-700 transition-colors">Home</Link>
-                            <Link href="/products" className="hover:text-purple-700 transition-colors">Collections</Link>
-                            <Link href="/about" className="hover:text-purple-700 transition-colors">About Us</Link>
-                            <Link href="/contact" className="hover:text-purple-700 transition-colors">Contact</Link>
+                            <Link href="/" className="hover:text-green-800 transition-colors">Home</Link>
+                            <Link href="/products" className="hover:text-green-800 transition-colors">Collections</Link>
+                            <Link href="/about" className="hover:text-green-800 transition-colors">About Us</Link>
+                            <Link href="/contact" className="hover:text-green-800 transition-colors">Contact</Link>
                         </nav>
 
                         <div className="flex items-center gap-4">
                             <Link
                                 href="/contact"
-                                className="hidden md:flex bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-purple-700 transition-colors"
+                                className="hidden md:flex bg-gray-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-green-800 transition-colors"
                             >
                                 Get a Quote
                             </Link>
@@ -55,7 +55,9 @@ export default function RootLayout({
                 <footer className="bg-gray-900 text-white py-16">
                     <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
                         <div className="space-y-4">
-                            <h3 className="text-2xl font-serif font-bold">LuxeAmenities</h3>
+                            <div className="flex items-center gap-3">
+                                <img src="/logo.png" alt="Harbigreen" className="h-12 w-auto" />
+                            </div>
                             <p className="text-gray-400 text-sm leading-relaxed">
                                 Providing exceptional amenities to the world's finest hotels and resorts.
                             </p>
@@ -96,7 +98,7 @@ export default function RootLayout({
                         </div>
                     </div>
                     <div className="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
-                        © {new Date().getFullYear()} LuxeAmenities. All rights reserved.
+                        © {new Date().getFullYear()} Harbigreen. All rights reserved.
                     </div>
                 </footer>
             </body>

@@ -8,17 +8,14 @@ import Link from 'next/link';
 import MediaUploader from '@/components/admin/MediaUploader';
 
 const CATEGORIES = [
-    { value: 'COSMETIC', label: 'Cosmetics', fields: ['sizes', 'packing'] },
-    { value: 'DENTAL_KIT', label: 'Dental Kit', fields: ['contents', 'packing'] },
-    { value: 'SHAVING_KIT', label: 'Shaving Kit', fields: ['contents', 'packing'] },
-    { value: 'VANITY_KIT', label: 'Vanity Kit', fields: ['contents', 'packing'] },
-    { value: 'SLIPPER', label: 'Slipper', fields: ['material', 'color', 'dimensions'] },
-    { value: 'COASTER', label: 'Coaster', fields: ['material', 'color', 'dimensions'] },
-    { value: 'LAUNDRY_BAG', label: 'Laundry Bag', fields: ['material', 'color', 'dimensions'] },
-    { value: 'GARBAGE_BAG', label: 'Garbage Bag', fields: ['material', 'color', 'dimensions'] },
-    { value: 'SHOWER_CAP', label: 'Shower Cap', fields: ['material', 'color'] },
-    { value: 'COMB', label: 'Comb', fields: ['material', 'color', 'dimensions'] },
-    { value: 'OTHER', label: 'Other', fields: ['material', 'dimensions'] },
+    { value: 'CONSUMABLES', label: 'Consumables', fields: ['material', 'packing'] },
+    { value: 'MOPS_WIPERS', label: 'Mops & Wipers', fields: ['material', 'dimensions', 'color'] },
+    { value: 'BROOMS_DUSTPANS', label: 'Brooms, Dustpans & Dustbins', fields: ['material', 'dimensions', 'color'] },
+    { value: 'HANDLING_EQUIPMENTS', label: 'Handling Equipments', fields: ['material', 'dimensions'] },
+    { value: 'UTILITIES', label: 'Utilities', fields: ['material', 'dimensions'] },
+    { value: 'DISPENSORS', label: 'Dispensors', fields: ['material', 'dimensions', 'color'] },
+    { value: 'CARTS_TROLLIES', label: 'Carts and Trollies', fields: ['material', 'dimensions', 'color'] },
+    { value: 'MACHINERIES', label: 'Machineries', fields: ['material', 'dimensions'] },
 ];
 
 export default function AddHotelAmenityPage() {
@@ -26,7 +23,7 @@ export default function AddHotelAmenityPage() {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
-        category: 'COSMETIC',
+        category: 'CONSUMABLES',
         description: '',
         image: '',
         price: '',
@@ -117,7 +114,7 @@ export default function AddHotelAmenityPage() {
                     </Link>
                     <div>
                         <h1 className="text-3xl font-bold text-gray-900 flex items-center gap-3">
-                            <Building2 className="w-8 h-8 text-purple-600" />
+                            <Building2 className="w-8 h-8 text-green-700" />
                             Add New Amenity
                         </h1>
                         <p className="mt-1 text-sm text-gray-500">
@@ -143,7 +140,7 @@ export default function AddHotelAmenityPage() {
                                     onChange={handleChange}
                                     required
                                     placeholder="e.g., Luxury Shampoo"
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 />
                             </div>
 
@@ -156,7 +153,7 @@ export default function AddHotelAmenityPage() {
                                     value={formData.category}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 >
                                     {CATEGORIES.map(cat => (
                                         <option key={cat.value} value={cat.value}>{cat.label}</option>
@@ -174,7 +171,7 @@ export default function AddHotelAmenityPage() {
                                     value={formData.priority}
                                     onChange={handleChange}
                                     min="0"
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 />
                             </div>
 
@@ -188,7 +185,7 @@ export default function AddHotelAmenityPage() {
                                     onChange={handleChange}
                                     rows={3}
                                     placeholder="Describe the product features, benefits, etc."
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 />
                             </div>
                         </div>
@@ -222,7 +219,7 @@ export default function AddHotelAmenityPage() {
                                     step="0.01"
                                     min="0"
                                     placeholder="e.g., 10.00"
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 />
                             </div>
 
@@ -236,7 +233,7 @@ export default function AddHotelAmenityPage() {
                                     value={formData.minOrderQty}
                                     onChange={handleChange}
                                     min="1"
-                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                 />
                             </div>
                         </div>
@@ -260,7 +257,7 @@ export default function AddHotelAmenityPage() {
                                                     value={size}
                                                     onChange={(e) => updateSizeInput(index, e.target.value)}
                                                     placeholder="e.g., 30ml, 50ml, 100ml"
-                                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                                 />
                                                 {sizeInputs.length > 1 && (
                                                     <button
@@ -276,7 +273,7 @@ export default function AddHotelAmenityPage() {
                                         <button
                                             type="button"
                                             onClick={addSizeInput}
-                                            className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700"
+                                            className="flex items-center gap-1 text-sm text-purple-600 hover:text-green-700"
                                         >
                                             <Plus className="w-4 h-4" />
                                             Add Size
@@ -297,7 +294,7 @@ export default function AddHotelAmenityPage() {
                                         value={formData.packing}
                                         onChange={handleChange}
                                         placeholder="e.g., Box of 100"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                     />
                                 </div>
                             )}
@@ -316,7 +313,7 @@ export default function AddHotelAmenityPage() {
                                                     value={content}
                                                     onChange={(e) => updateContentInput(index, e.target.value)}
                                                     placeholder="e.g., Toothbrush, Toothpaste (10g)"
-                                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                                    className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                                 />
                                                 {contentInputs.length > 1 && (
                                                     <button
@@ -332,7 +329,7 @@ export default function AddHotelAmenityPage() {
                                         <button
                                             type="button"
                                             onClick={addContentInput}
-                                            className="flex items-center gap-1 text-sm text-purple-600 hover:text-purple-700"
+                                            className="flex items-center gap-1 text-sm text-purple-600 hover:text-green-700"
                                         >
                                             <Plus className="w-4 h-4" />
                                             Add Item
@@ -353,7 +350,7 @@ export default function AddHotelAmenityPage() {
                                         value={formData.material}
                                         onChange={handleChange}
                                         placeholder="e.g., Non-woven fabric"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                     />
                                 </div>
                             )}
@@ -370,7 +367,7 @@ export default function AddHotelAmenityPage() {
                                         value={formData.color}
                                         onChange={handleChange}
                                         placeholder="e.g., White, Brown, Grey"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                     />
                                 </div>
                             )}
@@ -387,7 +384,7 @@ export default function AddHotelAmenityPage() {
                                         value={formData.dimensions}
                                         onChange={handleChange}
                                         placeholder="e.g., Small, Medium, Large or 40x30cm"
-                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                                     />
                                 </div>
                             )}
@@ -402,7 +399,7 @@ export default function AddHotelAmenityPage() {
                                 name="isActive"
                                 checked={formData.isActive}
                                 onChange={handleChange}
-                                className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-purple-500"
+                                className="w-4 h-4 text-purple-600 border-gray-300 rounded focus:ring-green-500"
                             />
                             <span className="text-sm font-medium text-gray-700">Active (visible in catalogue)</span>
                         </label>
@@ -419,7 +416,7 @@ export default function AddHotelAmenityPage() {
                         <button
                             type="submit"
                             disabled={loading}
-                            className="px-6 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="px-6 py-2 bg-green-700 text-white rounded-lg font-medium hover:bg-green-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {loading ? 'Creating...' : 'Create Amenity'}
                         </button>
