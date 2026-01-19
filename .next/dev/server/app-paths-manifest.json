@@ -1,13 +1,12 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/admin/funnel/page": "app/admin/funnel/page.js",
+  "/admin/hotel-catalogue/add/page": "app/admin/hotel-catalogue/add/page.js",
   "/admin/hotel-catalogue/page": "app/admin/hotel-catalogue/page.js",
-  "/admin/inquiries/page": "app/admin/inquiries/page.js",
-  "/admin/login/page": "app/admin/login/page.js",
   "/admin/page": "app/admin/page.js",
-  "/admin/whatsapp/page": "app/admin/whatsapp/page.js",
   "/api/admin/hotel-catalogue/route": "app/api/admin/hotel-catalogue/route.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js",
   "/api/funnel/route": "app/api/funnel/route.js",
-  "/page": "app/page.js"
+  "/catalogue/page": "app/catalogue/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js"
 }

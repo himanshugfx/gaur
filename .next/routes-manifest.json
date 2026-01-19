@@ -222,6 +222,12 @@
       "namedRegex": "^/api/admin/logout(?:/)?$"
     },
     {
+      "page": "/api/admin/media",
+      "regex": "^/api/admin/media(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/media(?:/)?$"
+    },
+    {
       "page": "/api/contact",
       "regex": "^/api/contact(?:/)?$",
       "routeKeys": {},
@@ -262,6 +268,12 @@
       "regex": "^/api/whatsapp/templates(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/whatsapp/templates(?:/)?$"
+    },
+    {
+      "page": "/catalogue",
+      "regex": "^/catalogue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/catalogue(?:/)?$"
     },
     {
       "page": "/contact",

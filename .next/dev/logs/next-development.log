@@ -1,8 +1,43 @@
-[00:00:00.859] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:01.008] Server  LOG     ✓ Ready in 723ms
-[00:00:04.559] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.164] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:31.189] Server  ERROR   (node:5908) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
+[00:00:01.119] Server  LOG     ✓ Ready in 825ms
+[00:00:06.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.863] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:00:21.300] Server  ERROR   (node:9988) Warning: SECURITY WARNING: The SSL modes 'prefer', 'require', and 'verify-ca' are treated as aliases for 'verify-full'.
 In the next major version (pg-connection-string v3.0.0 and pg v9.0.0), these modes will adopt standard libpq semantics, which have weaker security guarantees.
 
 To prepare for this change:
@@ -11,143 +46,300 @@ To prepare for this change:
 
 See https://www.postgresql.org/docs/current/libpq-ssl.html for libpq SSL mode definitions.
 (Use `node --trace-warnings ...` to show where the warning was created)
-[00:07:53.532] Server  LOG     ✓ Compiled in 460.3s
-[00:15:05.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:02.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:09.568] Server  ERROR   Error fetching stats: PrismaClientKnownRequestError: 
+[00:00:24.328] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:29.451] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:31.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:42.360] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:22.227] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:02:22.300] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:02:36.443] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:02:36.498] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:02:53.180] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:02:53.258] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:16:33.834] Server  LOG     ✓ Compiled in 67ms
+[00:17:16.722] Server  LOG     ✓ Compiled in 86ms
+[00:18:15.791] Server  LOG     ✓ Compiled in 79ms
+[00:19:28.170] Server  LOG     ✓ Compiled in 66ms
+[00:20:56.295] Server  LOG     ✓ Compiled in 115ms
+[00:21:27.695] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:27.857] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:21:32.428] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:32.540] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:21:32.566] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/catalogue" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:21:37.483] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:37.633] Browser ERROR   ReactDOM.useFormState has been renamed to React.useActionState. Please update %s to use React.useActionState. ContactPage
+[00:21:37.633] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/contact" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:21:47.577] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:47.778] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:21:47.790] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/hot..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:23:32.198] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:32.370] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/admin/hot..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:23:37.038] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:37.188] Browser ERROR   ReactDOM.useFormState has been renamed to React.useActionState. Please update %s to use React.useActionState. ContactPage
+[00:23:37.188] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/contact" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:24:42.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:42.315] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:24:57.801] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:24:57.868] Server  ERROR   Error fetching hotel amenities: Error: Unauthorized: Admin access required
+[00:26:05.647] Server  LOG     ✓ Compiled in 51ms
+[00:26:07.403] Server  LOG     ✓ Compiled in 47ms
+[00:26:22.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:22.655] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
+
+[00:26:27.298] Server  ERROR   Error fetching stats: PrismaClientKnownRequestError: 
 Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:238:166
+G:\Himanshu\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:238:166
 
   235 const dynamic = 'force-dynamic';
   236 async function getStats() {
   237     try {
 → 238         const totalLeads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count(
-The table `public.Lead` does not exist in the current database.
-[00:21:10.463] Server  ERROR   Error fetching recent leads: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:260:161
 
-  257 }
-  258 async function getRecentLeads() {
-  259     try {
-→ 260         const leads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany(
-The table `public.Lead` does not exist in the current database.
-[00:21:10.562] Server  ERROR   Error fetching stats: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:238:166
+[00:30:54.367] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:23.091] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:23.238] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
-  235 const dynamic = 'force-dynamic';
-  236 async function getStats() {
-  237     try {
-→ 238         const totalLeads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count(
-The table `public.Lead` does not exist in the current database.
-[00:21:11.296] Server  ERROR   Error fetching recent leads: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:260:161
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-  257 }
-  258 async function getRecentLeads() {
-  259     try {
-→ 260         const leads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany(
-The table `public.Lead` does not exist in the current database.
-[00:21:11.654] Server  ERROR   Error fetching stats: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:238:166
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
 
-  235 const dynamic = 'force-dynamic';
-  236 async function getStats() {
-  237     try {
-→ 238         const totalLeads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count(
-The table `public.Lead` does not exist in the current database.
-[00:21:12.254] Server  ERROR   Error fetching stats: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:238:166
+%s%s https://react.dev/link/hydration-mismatch 
 
-  235 const dynamic = 'force-dynamic';
-  236 async function getStats() {
-  237     try {
-→ 238         const totalLeads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.count(
-The table `public.Lead` does not exist in the current database.
-[00:21:12.577] Server  ERROR   Error fetching recent leads: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:260:161
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
++                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+-                           className="inter_5901b7c6-module__ec5Qua__variable playfair_display_dc3b86c2-module__wRxeB..."
+                          >
+                  ...
 
-  257 }
-  258 async function getRecentLeads() {
-  259     try {
-→ 260         const leads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany(
-The table `public.Lead` does not exist in the current database.
-[00:21:12.943] Server  ERROR   Error fetching recent leads: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__142dfcbb._.js:260:161
-
-  257 }
-  258 async function getRecentLeads() {
-  259     try {
-→ 260         const leads = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].lead.findMany(
-The table `public.Lead` does not exist in the current database.
-[00:21:22.279] Server  ERROR   Error fetching hotel amenities: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].hotelAmenity.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\[root-of-the-server]__1fc83580._.js:207:155
-
-  204     where.category = category;
-  205 }
-  206 const [amenities, total] = await Promise.all([
-→ 207     __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].hotelAmenity.findMany(
-The table `public.HotelAmenity` does not exist in the current database.
-[00:21:23.108] Server  ERROR   Error fetching hotel amenities: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].hotelAmenity.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\[root-of-the-server]__1fc83580._.js:220:155
-
-  217     skip: (page - 1) * limit,
-  218     take: limit
-  219 }),
-→ 220 __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].hotelAmenity.count(
-The table `public.HotelAmenity` does not exist in the current database.
-[00:21:24.705] Server  ERROR   Error fetching funnel data: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].funnelStage.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\[root-of-the-server]__d54f8cf1._.js:131:175
-
-  128 ];
-  129 async function ensureStagesExist() {
-  130     // Get all existing stages
-→ 131     const existingStages = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].funnelStage.findMany(
-The table `public.FunnelStage` does not exist in the current database.
-[00:21:26.830] Server  ERROR   Error fetching funnel data: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].funnelStage.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\[root-of-the-server]__d54f8cf1._.js:131:175
-
-  128 ];
-  129 async function ensureStagesExist() {
-  130     // Get all existing stages
-→ 131     const existingStages = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["prisma"].funnelStage.findMany(
-The table `public.FunnelStage` does not exist in the current database.
-[00:21:27.368] Server  ERROR   Error fetching WhatsApp stats: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppCampaign.count()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__15ef30cb._.js:118:157
-
-  115 try {
-  116     const [templates, campaigns, messages] = await Promise.all([
-  117         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppTemplate.count(),
-→ 118         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppCampaign.count(
-The table `public.WhatsAppCampaign` does not exist in the current database.
-[00:21:27.437] Server  ERROR   Error fetching templates: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppTemplate.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__15ef30cb._.js:158:177
-
-  155 }
-  156 async function getTemplates() {
-  157     try {
-→ 158         const templates = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppTemplate.findMany(
-The table `public.WhatsAppTemplate` does not exist in the current database.
-[00:21:27.578] Server  ERROR   Error fetching campaigns: PrismaClientKnownRequestError: 
-Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppCampaign.findMany()` invocation in
-D:\Himanshu Kumar\Anti gravity\gaur\.next\dev\server\chunks\ssr\[root-of-the-server]__15ef30cb._.js:144:177
-
-  141 }
-  142 async function getRecentCampaigns() {
-  143     try {
-→ 144         const campaigns = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["prisma"].whatsAppCampaign.findMany(
-The table `public.WhatsAppCampaign` does not exist in the current database.
-[00:21:29.048] Browser ERROR   Error fetching inquiries: {}
-[00:21:29.048] Browser ERROR   Error fetching inquiries: {}
+[00:31:57.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

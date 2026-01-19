@@ -18,7 +18,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-circle.js [app-client] (ecmascript) <export default as MessageCircle>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-client] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$building$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Building2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/building-2.js [app-client] (ecmascript) <export default as Building2>");
 ;
@@ -68,13 +67,13 @@ const NavItemComponent = ({ item, isCollapsed, pathname, onClose, expandedMenus,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: ()=>toggleMenu(item.name),
                     title: isCollapsed ? item.name : undefined,
-                    className: `w-full flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive || isChildActive ? 'bg-purple-600/20 text-purple-400' : 'text-gray-400 hover:text-white'}`,
+                    className: `w-full flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive || isChildActive ? 'bg-green-800/20 text-emerald-400' : 'text-gray-400 hover:text-white'}`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: `flex items-center ${!isCollapsed && 'gap-3'}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                                    className: `w-5 h-5 ${isActive || isChildActive ? 'text-purple-400' : 'text-gray-400 group-hover:text-white'}`
+                                    className: `w-5 h-5 ${isActive || isChildActive ? 'text-emerald-400' : 'text-gray-400 group-hover:text-white'}`
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/admin/Sidebar.tsx",
                                     lineNumber: 88,
@@ -133,7 +132,7 @@ const NavItemComponent = ({ item, isCollapsed, pathname, onClose, expandedMenus,
                                         toggleMenu(item.name); // Close the popover after clicking
                                         if (window.innerWidth < 1024) onClose();
                                     },
-                                    className: `flex items-center gap-3 px-4 py-2.5 transition-all duration-200 ${isChildItemActive ? 'bg-purple-600 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800'}`,
+                                    className: `flex items-center gap-3 px-4 py-2.5 transition-all duration-200 ${isChildItemActive ? 'bg-green-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800'}`,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChildIcon, {
                                             className: "w-4 h-4"
@@ -176,7 +175,7 @@ const NavItemComponent = ({ item, isCollapsed, pathname, onClose, expandedMenus,
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: child.href,
                             onClick: ()=>window.innerWidth < 1024 && onClose(),
-                            className: `flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-200 ${isChildItemActive ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20' : 'text-gray-400 hover:text-white hover:bg-gray-800'}`,
+                            className: `flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-200 ${isChildItemActive ? 'bg-green-800 text-white shadow-lg shadow-green-500/20' : 'text-gray-400 hover:text-white hover:bg-gray-800'}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChildIcon, {
                                     className: "w-4 h-4"
@@ -216,7 +215,7 @@ const NavItemComponent = ({ item, isCollapsed, pathname, onClose, expandedMenus,
         href: item.href,
         onClick: ()=>window.innerWidth < 1024 && onClose(),
         title: isCollapsed ? item.name : undefined,
-        className: `flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/20' : 'text-gray-400 hover:text-white'}`,
+        className: `flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'} px-4 py-3 rounded-xl transition-all duration-200 group ${isActive ? 'bg-green-800 text-white shadow-lg shadow-green-500/20' : 'text-gray-400 hover:text-white'}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: `flex items-center ${!isCollapsed && 'gap-3'}`,
@@ -265,31 +264,23 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex items-center gap-3",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 flex-shrink-0 group",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__["Shield"], {
-                                    className: "w-6 h-6 text-white group-hover:scale-110 transition-transform"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/admin/Sidebar.tsx",
-                                    lineNumber: 200,
-                                    columnNumber: 21
-                                }, ("TURBOPACK compile-time value", void 0))
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 group",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/logo.png",
+                                alt: "Harbigreen",
+                                className: "w-full h-full object-contain"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                                lineNumber: 199,
-                                columnNumber: 17
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            !isCollapsed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-lg font-bold tracking-wide",
-                                children: "Gaur Admin"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/admin/Sidebar.tsx",
-                                lineNumber: 202,
-                                columnNumber: 34
+                                lineNumber: 200,
+                                columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
-                        ]
-                    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/admin/Sidebar.tsx",
+                            lineNumber: 199,
+                            columnNumber: 17
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
                         fileName: "[project]/src/components/admin/Sidebar.tsx",
                         lineNumber: 198,
                         columnNumber: 13
@@ -303,12 +294,12 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                             className: "w-6 h-6"
                         }, void 0, false, {
                             fileName: "[project]/src/components/admin/Sidebar.tsx",
-                            lineNumber: 211,
+                            lineNumber: 210,
                             columnNumber: 17
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/admin/Sidebar.tsx",
-                        lineNumber: 205,
+                        lineNumber: 204,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
@@ -330,17 +321,17 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                             toggleMenu: toggleMenu
                         }, item.name, false, {
                             fileName: "[project]/src/components/admin/Sidebar.tsx",
-                            lineNumber: 219,
+                            lineNumber: 218,
                             columnNumber: 21
                         }, ("TURBOPACK compile-time value", void 0)))
                 }, void 0, false, {
                     fileName: "[project]/src/components/admin/Sidebar.tsx",
-                    lineNumber: 217,
+                    lineNumber: 216,
                     columnNumber: 13
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                lineNumber: 216,
+                lineNumber: 215,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -355,7 +346,7 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                                 className: "w-5 h-5 group-hover:-translate-x-0.5 transition-transform"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                                lineNumber: 240,
+                                lineNumber: 239,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -363,13 +354,13 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                                 children: "Close Sidebar"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                                lineNumber: 241,
+                                lineNumber: 240,
                                 columnNumber: 17
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/admin/Sidebar.tsx",
-                        lineNumber: 235,
+                        lineNumber: 234,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -381,24 +372,24 @@ const SidebarContent = ({ isCollapsed, onClose, onToggleCollapse, pathname, expa
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/admin/Sidebar.tsx",
-                            lineNumber: 251,
+                            lineNumber: 250,
                             columnNumber: 32
                         }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevrons$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronsLeft$3e$__["ChevronsLeft"], {
                             className: "w-5 h-5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/admin/Sidebar.tsx",
-                            lineNumber: 251,
+                            lineNumber: 250,
                             columnNumber: 72
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/src/components/admin/Sidebar.tsx",
-                        lineNumber: 245,
+                        lineNumber: 244,
                         columnNumber: 13
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                lineNumber: 233,
+                lineNumber: 232,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -435,12 +426,12 @@ function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse }) {
                     toggleMenu: toggleMenu
                 }, void 0, false, {
                     fileName: "[project]/src/components/admin/Sidebar.tsx",
-                    lineNumber: 277,
+                    lineNumber: 276,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                lineNumber: 270,
+                lineNumber: 269,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -454,12 +445,12 @@ function Sidebar({ isOpen, onClose, isCollapsed, onToggleCollapse }) {
                     toggleMenu: toggleMenu
                 }, void 0, false, {
                     fileName: "[project]/src/components/admin/Sidebar.tsx",
-                    lineNumber: 290,
+                    lineNumber: 289,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/admin/Sidebar.tsx",
-                lineNumber: 288,
+                lineNumber: 287,
                 columnNumber: 13
             }, this)
         ]
@@ -552,7 +543,7 @@ function AdminHeader({ onMenuClick }) {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-xs text-gray-500 font-medium mt-0.5",
-                                    children: "Managing Gaur Admin Panel"
+                                    children: "Managing Harbigreen Admin Panel"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/admin/AdminHeader.tsx",
                                     lineNumber: 45,
@@ -568,7 +559,7 @@ function AdminHeader({ onMenuClick }) {
                             className: "lg:hidden",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-base font-bold text-gray-900",
-                                children: "Gaur Admin"
+                                children: "Harbigreen"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/admin/AdminHeader.tsx",
                                 lineNumber: 50,
@@ -606,7 +597,7 @@ function AdminHeader({ onMenuClick }) {
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "text-[10px] text-purple-600 font-black uppercase tracking-widest mt-0.5",
+                                                className: "text-[10px] text-emerald-600 font-black uppercase tracking-widest mt-0.5",
                                                 children: "Online"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/admin/AdminHeader.tsx",
@@ -620,7 +611,7 @@ function AdminHeader({ onMenuClick }) {
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-10 h-10 bg-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/20 group-hover:scale-105 transition-transform",
+                                        className: "w-10 h-10 bg-green-800 rounded-xl flex items-center justify-center shadow-lg shadow-green-500/20 group-hover:scale-105 transition-transform",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-white font-bold text-lg",
                                             children: "A"
@@ -666,7 +657,7 @@ function AdminHeader({ onMenuClick }) {
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-xs text-gray-500 mt-1",
-                                                        children: "admin@gaur.com"
+                                                        children: "admin@harbigreen.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/admin/AdminHeader.tsx",
                                                         lineNumber: 84,
@@ -689,7 +680,7 @@ function AdminHeader({ onMenuClick }) {
                                                         className: "flex items-center w-full px-3 py-2.5 text-sm font-medium text-gray-700 rounded-xl hover:bg-gray-50 transition-colors gap-3 group",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "w-8 h-8 rounded-lg bg-gray-100 group-hover:bg-purple-100 text-gray-400 group-hover:text-purple-600 flex items-center justify-center transition-colors",
+                                                                className: "w-8 h-8 rounded-lg bg-gray-100 group-hover:bg-emerald-100 text-gray-400 group-hover:text-emerald-600 flex items-center justify-center transition-colors",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$settings$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Settings$3e$__["Settings"], {
                                                                     className: "w-4 h-4"
                                                                 }, void 0, false, {
@@ -929,48 +920,36 @@ const CATEGORIES = [
         label: 'All Categories'
     },
     {
-        value: 'COSMETIC',
-        label: 'Cosmetics'
+        value: 'CONSUMABLES',
+        label: 'Consumables'
     },
     {
-        value: 'DENTAL_KIT',
-        label: 'Dental Kits'
+        value: 'MOPS_WIPERS',
+        label: 'Mops & Wipers'
     },
     {
-        value: 'SHAVING_KIT',
-        label: 'Shaving Kits'
+        value: 'BROOMS_DUSTPANS',
+        label: 'Brooms, Dustpans & Dustbins'
     },
     {
-        value: 'VANITY_KIT',
-        label: 'Vanity Kits'
+        value: 'HANDLING_EQUIPMENTS',
+        label: 'Handling Equipments'
     },
     {
-        value: 'SLIPPER',
-        label: 'Slippers'
+        value: 'UTILITIES',
+        label: 'Utilities'
     },
     {
-        value: 'COASTER',
-        label: 'Coasters'
+        value: 'DISPENSORS',
+        label: 'Dispensors'
     },
     {
-        value: 'LAUNDRY_BAG',
-        label: 'Laundry Bags'
+        value: 'CARTS_TROLLIES',
+        label: 'Carts and Trollies'
     },
     {
-        value: 'GARBAGE_BAG',
-        label: 'Garbage Bags'
-    },
-    {
-        value: 'SHOWER_CAP',
-        label: 'Shower Caps'
-    },
-    {
-        value: 'COMB',
-        label: 'Combs'
-    },
-    {
-        value: 'OTHER',
-        label: 'Other'
+        value: 'MACHINERIES',
+        label: 'Machineries'
     }
 ];
 const getCategoryLabel = (category)=>{
@@ -978,16 +957,14 @@ const getCategoryLabel = (category)=>{
 };
 const getCategoryColor = (category)=>{
     const colors = {
-        COSMETIC: 'bg-purple-100 text-purple-700',
-        DENTAL_KIT: 'bg-blue-100 text-blue-700',
-        SHAVING_KIT: 'bg-green-100 text-green-700',
-        VANITY_KIT: 'bg-pink-100 text-pink-700',
-        SLIPPER: 'bg-orange-100 text-orange-700',
-        COASTER: 'bg-yellow-100 text-yellow-700',
-        LAUNDRY_BAG: 'bg-teal-100 text-teal-700',
-        GARBAGE_BAG: 'bg-gray-100 text-gray-700',
-        SHOWER_CAP: 'bg-cyan-100 text-cyan-700',
-        COMB: 'bg-indigo-100 text-indigo-700'
+        CONSUMABLES: 'bg-green-100 text-green-700',
+        MOPS_WIPERS: 'bg-blue-100 text-blue-700',
+        BROOMS_DUSTPANS: 'bg-amber-100 text-amber-700',
+        HANDLING_EQUIPMENTS: 'bg-purple-100 text-purple-700',
+        UTILITIES: 'bg-teal-100 text-teal-700',
+        DISPENSORS: 'bg-pink-100 text-pink-700',
+        CARTS_TROLLIES: 'bg-orange-100 text-orange-700',
+        MACHINERIES: 'bg-indigo-100 text-indigo-700'
     };
     return colors[category] || 'bg-gray-100 text-gray-700';
 };
@@ -1614,14 +1591,14 @@ function HotelCataloguePage() {
                                             className: "w-8 h-8 text-purple-600"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                            lineNumber: 688,
+                                            lineNumber: 683,
                                             columnNumber: 29
                                         }, this),
                                         "Hotel Catalogue"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 687,
+                                    lineNumber: 682,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1629,13 +1606,13 @@ function HotelCataloguePage() {
                                     children: "Manage hotel amenities and supplies"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 691,
+                                    lineNumber: 686,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                            lineNumber: 686,
+                            lineNumber: 681,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1650,14 +1627,14 @@ function HotelCataloguePage() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                            lineNumber: 701,
+                                            lineNumber: 696,
                                             columnNumber: 29
                                         }, this),
                                         "View Catalogue"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 696,
+                                    lineNumber: 691,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1669,14 +1646,14 @@ function HotelCataloguePage() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                            lineNumber: 709,
+                                            lineNumber: 704,
                                             columnNumber: 29
                                         }, this),
                                         generatingPdf ? 'Generating...' : 'Download PDF'
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 704,
+                                    lineNumber: 699,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1687,26 +1664,26 @@ function HotelCataloguePage() {
                                             className: "w-5 h-5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                            lineNumber: 716,
+                                            lineNumber: 711,
                                             columnNumber: 29
                                         }, this),
                                         "Add Amenity"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 712,
+                                    lineNumber: 707,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                            lineNumber: 695,
+                            lineNumber: 690,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                    lineNumber: 685,
+                    lineNumber: 680,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1719,7 +1696,7 @@ function HotelCataloguePage() {
                                     className: "absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 725,
+                                    lineNumber: 720,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1730,13 +1707,13 @@ function HotelCataloguePage() {
                                     className: "w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white shadow-sm transition-all outline-none"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 726,
+                                    lineNumber: 721,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                            lineNumber: 724,
+                            lineNumber: 719,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1750,23 +1727,23 @@ function HotelCataloguePage() {
                                         children: cat.label
                                     }, cat.value, false, {
                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                        lineNumber: 741,
+                                        lineNumber: 736,
                                         columnNumber: 33
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 735,
+                                lineNumber: 730,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                            lineNumber: 734,
+                            lineNumber: 729,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                    lineNumber: 723,
+                    lineNumber: 718,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1778,7 +1755,7 @@ function HotelCataloguePage() {
                                 className: "w-8 h-8 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 753,
+                                lineNumber: 748,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1786,13 +1763,13 @@ function HotelCataloguePage() {
                                 children: "Loading amenities..."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 754,
+                                lineNumber: 749,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                        lineNumber: 752,
+                        lineNumber: 747,
                         columnNumber: 25
                     }, this) : amenities.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-center justify-center py-20",
@@ -1803,12 +1780,12 @@ function HotelCataloguePage() {
                                     className: "w-10 h-10 text-purple-500"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                    lineNumber: 759,
+                                    lineNumber: 754,
                                     columnNumber: 33
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 758,
+                                lineNumber: 753,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1816,7 +1793,7 @@ function HotelCataloguePage() {
                                 children: "No amenities found"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 761,
+                                lineNumber: 756,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1824,7 +1801,7 @@ function HotelCataloguePage() {
                                 children: "Get started by adding your first amenity or load sample data"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 762,
+                                lineNumber: 757,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1837,7 +1814,7 @@ function HotelCataloguePage() {
                                         children: seeding ? 'Adding...' : 'Load Sample Data'
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                        lineNumber: 764,
+                                        lineNumber: 759,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1846,19 +1823,19 @@ function HotelCataloguePage() {
                                         children: "Add Manually"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                        lineNumber: 771,
+                                        lineNumber: 766,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 763,
+                                lineNumber: 758,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                        lineNumber: 757,
+                        lineNumber: 752,
                         columnNumber: 25
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6",
@@ -1877,7 +1854,7 @@ function HotelCataloguePage() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 787,
+                                                lineNumber: 782,
                                                 columnNumber: 41
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1887,12 +1864,12 @@ function HotelCataloguePage() {
                                                     children: getCategoryLabel(amenity.category)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                    lineNumber: 796,
+                                                    lineNumber: 791,
                                                     columnNumber: 45
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 795,
+                                                lineNumber: 790,
                                                 columnNumber: 41
                                             }, this),
                                             !amenity.isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1902,18 +1879,18 @@ function HotelCataloguePage() {
                                                     children: "Inactive"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                    lineNumber: 802,
+                                                    lineNumber: 797,
                                                     columnNumber: 49
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 801,
+                                                lineNumber: 796,
                                                 columnNumber: 45
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                        lineNumber: 786,
+                                        lineNumber: 781,
                                         columnNumber: 37
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1924,7 +1901,7 @@ function HotelCataloguePage() {
                                                 children: amenity.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 809,
+                                                lineNumber: 804,
                                                 columnNumber: 41
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1935,7 +1912,7 @@ function HotelCataloguePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 810,
+                                                lineNumber: 805,
                                                 columnNumber: 41
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1947,7 +1924,7 @@ function HotelCataloguePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 811,
+                                                lineNumber: 806,
                                                 columnNumber: 41
                                             }, this),
                                             amenity.sizes && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1958,7 +1935,7 @@ function HotelCataloguePage() {
                                                         children: "Sizes:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                        lineNumber: 815,
+                                                        lineNumber: 810,
                                                         columnNumber: 49
                                                     }, this),
                                                     " ",
@@ -1966,7 +1943,7 @@ function HotelCataloguePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 814,
+                                                lineNumber: 809,
                                                 columnNumber: 45
                                             }, this),
                                             amenity.material && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1977,7 +1954,7 @@ function HotelCataloguePage() {
                                                         children: "Material:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                        lineNumber: 820,
+                                                        lineNumber: 815,
                                                         columnNumber: 49
                                                     }, this),
                                                     " ",
@@ -1985,7 +1962,7 @@ function HotelCataloguePage() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 819,
+                                                lineNumber: 814,
                                                 columnNumber: 45
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1999,14 +1976,14 @@ function HotelCataloguePage() {
                                                                 className: "w-4 h-4"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                                lineNumber: 829,
+                                                                lineNumber: 824,
                                                                 columnNumber: 49
                                                             }, this),
                                                             "Edit"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                        lineNumber: 825,
+                                                        lineNumber: 820,
                                                         columnNumber: 45
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2016,51 +1993,51 @@ function HotelCataloguePage() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                            lineNumber: 836,
+                                                            lineNumber: 831,
                                                             columnNumber: 49
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                        lineNumber: 832,
+                                                        lineNumber: 827,
                                                         columnNumber: 45
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                                lineNumber: 824,
+                                                lineNumber: 819,
                                                 columnNumber: 41
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                        lineNumber: 808,
+                                        lineNumber: 803,
                                         columnNumber: 37
                                     }, this)
                                 ]
                             }, amenity.id, true, {
                                 fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                                lineNumber: 782,
+                                lineNumber: 777,
                                 columnNumber: 33
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                        lineNumber: 780,
+                        lineNumber: 775,
                         columnNumber: 25
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-                    lineNumber: 750,
+                    lineNumber: 745,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-            lineNumber: 683,
+            lineNumber: 678,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/admin/hotel-catalogue/page.tsx",
-        lineNumber: 682,
+        lineNumber: 677,
         columnNumber: 9
     }, this);
 }
